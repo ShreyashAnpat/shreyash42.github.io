@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <mata name="viewport" content="width=device-width , initial-scale=1.0 "></mata>
+     
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>shreyas</title>
+</head>
+<body>
+    <div class="hero">
+       <div class="from-box">
+           <div class="button-box">
+               <div id="btn"></div>
+            <button type="button" class="toggle-button" onclick="login()">log-in</button>
+            <button type="button" class="toggle-button" onclick="regestor()">Register</button>
+           </div> 
+           <div class ="social-icons">
+               <div>
+            <i class="fa fa-facebook hight"></i>
+            <i class="fa fa-twitter hight"></i>
+            <i class="fa fa-instagram"></i>
+               </div>
+            
+        </div>
+        <div >
+            <form id="login"class="input-group" action="_index.php" method="POST">
+                <input type="text" name="userid" class="input-field" placeholder="User Id">
+                <input type="password" name="pass" class="input-field" placeholder="enter a passward">
+                <input type="checkbox" class="checkbox" ><span>Remenber passward</span>
+                <button type="submit" class="submit-btn">Log-in</button>
+            </form>
+             <form id="regestor" class="input-group">
+                <input type="text" class="input-field" placeholder="User Id">
+                <input type="text" class="input-field" placeholder="Email Id">
+                <input type="password" class="input-field" placeholder="enter a passward">
+                <input type="checkbox" class="checkbox" ><span>I agree term & conditions </span>
+                <button type="submit" class="submit-btn"  >Register</button>
+               
+            </form>
+
+               
+        </div>
+        
+        
+       </div>
+       
+      
+    </div>
+    <button type="submit" id="webpage" class="submit-btn button-box "  ><a class="webpage" href="SHOPING\shoping.html">go on web</a></button><button type="submit" class="submit-btn"  ><a class="webpage" id="underline" href="C:\Users\SHREYASH\Desktop\SHOPING\shoping.html"><b>go on web</b></a></button>
+         
+    </div>
+    <script> 
+     var x = document.getElementById("login") ;
+    var y = document.getElementById("regestor") ;
+    var z = document.getElementById("btn") ;
+    function regestor(){
+    
+        x.style.left="-400px";
+        y.style.left="50px";
+        z.style.left="110px";
+
+    }
+    function login(){
+    
+    x.style.left="50px";
+    y.style.left="450px";
+    z.style.left="0px";
+
+}
+   
+
+    </script>
+    <!--
+        
+    -->
+    
+</body>
+</html>
